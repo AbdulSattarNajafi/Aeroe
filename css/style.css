@@ -111,7 +111,7 @@ label{
 }
 .main-agile .logo .text-container p{
     font-weight: 900;
-    font-size: 1.4rem;
+    font-size: 1.75rem;
 }
 .agile-top {
 
@@ -1765,17 +1765,12 @@ a.w3-buttons {
     height: auto;
 }
 .team-info{
-
     position: relative;
-
-    overflow: hidden;	
-
+    overflow: hidden;
+    cursor: pointer;	
 }
-
 .team-info img{
-
 	width:100%;
-
 }
 
 .team-caption h4{
@@ -2273,7 +2268,7 @@ h5.small-title {
 
     color: #000;
 
-    font-size: 20px;
+    font-size: 25px;
 
     letter-spacing: 1px;
 
@@ -2284,9 +2279,9 @@ h5.small-title {
 
 	color: #000;
 
-	font-size: 17px;
+	font-size: 21px;
 
-	line-height: 1.9;
+	line-height: 1;
 
 	/* letter-spacing: 1px; */
 
@@ -2323,6 +2318,7 @@ h5.small-title {
     text-align: center;
 
     line-height: 2.5;
+    margin-top: 7px;
 
 }
 
@@ -3692,9 +3688,13 @@ div#bgcs p {
     }
 
     .testimonials {
-
         padding-top: 4em;
-
+    }
+    .title-div h2 {
+        font-size: 34px;
+    }
+    div#bgcs p {
+        font-size: 18px;
     }
 
     h6.w3l-style {
