@@ -147,7 +147,7 @@
 
 				</a>
 
-				<nav>
+				<nav id="side_nav">
 
 					<a href="index.html">Home</a>
 
@@ -189,6 +189,10 @@
 						<div class="container">
 
 							<div class="agileits-banner-info">
+								<div class="info-bann">
+									<a href="#sskl" class="scroll">
+
+									
 
 								<img class="lg-plant" src="images/aeroe-logo.png" style="width: 60%;">
 
@@ -209,13 +213,14 @@
 								</div> -->
 
 								<div class="thim-click-to-bottom">
-									<a href="#bgcs" class="scroll">
+									<a href="#sskl" class="scroll">
 										<i class="fa  fa-chevron-down"></i>
 									</a>
 								</div>
 
 							</div>
-
+							</a>
+						</div>
 						</div>
 
 					</div>
@@ -229,6 +234,8 @@
 						<div class="container">
 
 							<div class="agileits-banner-info">
+								<div class="info-bann">
+									<a href="#sskl" class="scroll">
 
 								<!-- <h3>Plant Trees Now</h3> -->
 
@@ -238,7 +245,7 @@
 
 								<div class="thim-click-to-bottom">
 
-									<a href="#bgcs" class="scroll">
+									<a href="#sskl" class="scroll">
 
 										<i class="fa  fa-chevron-down"></i>
 
@@ -247,7 +254,8 @@
 								</div>
 
 							</div>
-
+						</a>
+							</div>
 						</div>
 
 					</div>
@@ -261,6 +269,8 @@
 						<div class="container">
 
 							<div class="agileits-banner-info">
+								<div class="info-bann">
+									<a href="#sskl" class="scroll">
 
 								<!-- <h3>Save our Planet</h3> -->
 
@@ -270,7 +280,7 @@
 
 								<div class="thim-click-to-bottom">
 
-									<a href="#bgcs" class="scroll">
+									<a href="#sskl" class="scroll">
 
 										<i class="fa  fa-chevron-down"></i>
 
@@ -279,7 +289,8 @@
 								</div>
 
 							</div>
-
+							</div>
+						</a>
 						</div>
 
 					</div>
@@ -298,7 +309,7 @@
 	<!-- //banner -->
 
 	<!-- Start of Logo section -->
-	<div class="container text-center">
+	<div class="container text-center" id="sskl">
 		<div class="logo_container">
 			<img src="images/aeroe-logo.png">
 		</div>
@@ -623,7 +634,7 @@
 
 				<div class="col-sm-4 col-xs-6 agileits-team-grid">
 
-					<div class="team-info" onclick="window.location=`https://www.linkedin.com/in/dan-canobbio-8957969a/`">
+					<div class="team-info" onclick="window.open('https://www.linkedin.com/in/dan-canobbio-8957969a/', '_blank')">
 
 						<img src="images/team-1.jpg" alt="Dan Canobbio's photo">
 
@@ -665,7 +676,7 @@
 
 				<div class="col-sm-4 col-xs-6 agileits-team-grid">
 
-					<div class="team-info" onclick="window.location=`https://www.linkedin.com/in/roz-biles-7740a42/`">
+					<div class="team-info" onclick="window.open('https://www.linkedin.com/in/roz-biles-7740a42/', '_blank')">
 
 						<img src="images/team-2.jpg" alt="Roz Biles's photo">
 
@@ -705,7 +716,7 @@
 
 				<div class="col-sm-4 col-xs-6 agileits-team-grid">
 
-					<div class="team-info" onclick="window.location=`https://www.linkedin.com/in/steve-mortensen-sbc/`">
+					<div class="team-info" onclick="window.open('https://www.linkedin.com/in/steve-mortensen-sbc/', '_blank')">
 
 						<img src="images/team-5.jpg" alt="Steve Mortensen's photo">
 
@@ -739,7 +750,7 @@
 
 				<div class="col-sm-4 col-xs-6 agileits-team-grid">
 
-					<div class="team-info" onclick="window.location=`https://www.linkedin.com/in/jackie-vergne/`">
+					<div class="team-info" onclick="window.open('https://www.linkedin.com/in/jackie-vergne/', '_blank')">
 
 						<img src="images/team-3.jpg" alt="Jackie Vergne's photo">
 
@@ -773,7 +784,7 @@
 
 				<div class="col-sm-4 col-xs-6 agileits-team-grid">
 
-					<div class="team-info" onclick="window.location=`https://www.linkedin.com/in/gregg-t-warciski-665a6b1/`">
+					<div class="team-info" onclick="window.open('https://www.linkedin.com/in/gregg-t-warciski-665a6b1/', '_blank')">
 
 						<img src="images/team-4.jpg" alt="Gregg T. Warciski's photo">
 
@@ -1287,7 +1298,7 @@
 
 						<p>Locations</p>
 
-						<span>Newport Beach; Dallas Texas</span>
+						<span>Newport Beach; California/ Dallas, Texas</span>
 
 					</div>
 
@@ -1593,12 +1604,24 @@ footerDate.textContent = new Date().getFullYear();
 	<!-- navigation -->
 
 	<script>
+		const navLinks = document.querySelectorAll('#side_nav .scroll');
+		const sideMenu = document.querySelector('.menu');
+		navLinks.forEach(navLink => {
+			navLink.addEventListener('click', () => {
+				sideMenu.classList.toggle('open');
+			})
+		});
 
 		(function ($) {
 
 			// Menu Functions
 
 			$(document).ready(function () {
+
+				$('#side-nav .scroll').click(function(e) {
+					e.preventDefault();
+					$('.menu').toggleClass('open');
+				});
 
 				$('#menuToggle').click(function (e) {
 
@@ -1614,7 +1637,7 @@ footerDate.textContent = new Date().getFullYear();
 
 					setTimeout(function () {
 
-						console.log("timeout set");
+						// console.log("timeout set");
 
 						$('#menuToggle > span').toggleClass("navClosed").toggleClass("navOpen");
 
