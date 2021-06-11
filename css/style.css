@@ -111,6 +111,7 @@ label{
 .main-agile .logo .text-container p{
     font-weight: 900;
     font-size: 1.5rem;
+    color: #0d3269;
 }
 .agile-top {
 
@@ -184,7 +185,7 @@ label{
 
 .flex-direction-nav {
 
-    height: 100px;
+    height: 140px;
 }
 
 .logo {
@@ -734,18 +735,21 @@ nav a:hover:after {
 .agileits-banner-info {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
     margin-top: 22em;
 
 }
 .agileits-banner-info .info-bann{
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
     margin-top: 22em;
 }
 .agileits-banner-info .info-bann a{
     display: block;
     width: 100%;
     height: 100%;
+    text-decoration: none;
 }
 
 .agileits-banner-info p {
@@ -1490,13 +1494,13 @@ h6.w3l-style {
 
 .wthree-heading h4 {
 
-    font-size: 30px;
+    font-size: 26px;
 
     color: #333;
 
     letter-spacing: 1px;
 
-    margin-top: 18px;
+    margin-top: 14px;
 
 }
 
@@ -1557,7 +1561,13 @@ h6.w3l-style {
     border: 1px solid #0289B7;
 
 }
+.agileits-services-grids:nth-child(4) .wthree-ser i{
 
+    color: #0289B7;
+
+    border: 1px solid #0289B7;
+
+}
 .agileits-services-grids p {
 
     margin-top: 30px;
@@ -1619,12 +1629,21 @@ a.w3-buttons {
     background: #0289B7;
 
 }
+.agileits-services-grids:nth-child(4) a.w3-buttons{
 
+    background: #0289B7;
+
+}
+.agileits-services-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 .agileits-services-grids {
 
-    padding: 30px;
+    padding: 1rem;
 
-    width: 32%;
+    width: 24%;
 
     transition:0.5s all;
 
@@ -1636,6 +1655,9 @@ a.w3-buttons {
 
 	-ms-transition:0.5s all;
 
+}
+.agileits-services-grids a{
+    text-decoration: none;
 }
 
 .agileits-services-grids:hover{
@@ -1658,11 +1680,6 @@ a.w3-buttons {
 
 }
 
-.agileits-services-grids:nth-child(2) {
-
-    margin: 0 22px;
-
-}
 
 .agileits-services-row-2{
 
@@ -1747,6 +1764,7 @@ a.w3-buttons {
     -o-background-size: cover;
 
     -moz-background-size: cover;
+    margin-top: 5rem 0;
 
 }
 
@@ -2090,12 +2108,6 @@ p.w3agile {
 
 /*-- testimonials --*/
 
-.testimonials {
-
-    padding-top: 5em;
-
-}
-
 .testimonials-main img {
 
 	margin: 0 auto;
@@ -2334,13 +2346,13 @@ h5.small-title {
     text-align: center;
 
     line-height: 2.5;
-    margin-top: 7px;
+    margin-top: 18px;
 
 }
 
 .address-left-second {
 
-    padding: 30px 0 0 80px;
+    padding: 0 0 0 80px;
 
 }
 
@@ -2363,7 +2375,17 @@ h5.small-title {
 /*-- //contact second section --*/
 
 /*-- contact form --*/
-
+.second-contact-agile{
+    display: flex;
+    align-items: center;
+}
+.second-contact-agile .address-left-second .logo-grid{
+    margin-bottom: 30px;
+}
+.second-contact-agile .address-left-second .logo-grid img{
+    max-width: 70%;
+    height: auto;
+}
 .form-bg form {
 
     width: 85%;
@@ -3001,7 +3023,7 @@ div#bgcs p {
 
     .address-left-second {
 
-        padding: 30px 0 0 50px;
+        padding: 0 0 0 50px;
 
     }
 
@@ -3505,6 +3527,16 @@ div#bgcs p {
 
         margin-top: 25px;
 
+    }
+    .second-contact-agile{
+        flex-direction: column;
+    }
+    .second-contact-agile .form-bg{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .second-contact-agile .address-left-second{
+        width: 100%;
     }
 
     .w3layouts-newsletter {
@@ -4349,7 +4381,7 @@ div#bgcs p {
 
     .address-left-second {
 
-        padding: 30px 0 0 30px;
+        padding: 0 0 0 30px;
 
     }
 
