@@ -111,7 +111,7 @@ label{
 .main-agile .logo .text-container p{
     font-weight: 900;
     font-size: 1.5rem;
-    color: #0d3269;
+    color: #0089B9;
 }
 .agile-top {
 
@@ -1494,20 +1494,24 @@ h6.w3l-style {
 
 .wthree-heading h4 {
 
-    font-size: 26px;
+    font-size: 34px;
 
     color: #333;
 
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 
-    margin-top: 14px;
+    margin-top: 5px;
 
 }
 
-.wthree-ser{
+.wthree-ser,
+.wthree-heading{
 
     padding:0;
 
+}
+.wthree-heading{
+    margin-top: 20px;
 }
 
 .wthree-ser i {
@@ -1520,11 +1524,11 @@ h6.w3l-style {
 
     text-align: center;
 
-    width: 70px;
+    width: 80px;
 
-    height: 70px;
+    height: 80px;
 
-    line-height: 1.7;
+    line-height: 2;
 
     border-radius: 50%;
 
@@ -1573,12 +1577,14 @@ h6.w3l-style {
     margin-top: 30px;
 
 }
-
+.agileits-services-grids .btn-container{
+    margin-top: auto;
+}
 a.w3-buttons {
 
     color: #fff;
 
-    padding: 12px 34px;
+    padding: 6px 14px;
 
     background: #000;
 
@@ -1598,7 +1604,7 @@ a.w3-buttons {
 
     letter-spacing: 1px;
 
-    margin-top: 40px;
+    margin-top: 20px;
 
     -webkit-transition: 0.5s all;
 
@@ -1634,16 +1640,19 @@ a.w3-buttons {
     background: #0289B7;
 
 }
-.agileits-services-row{
+.agileits-services{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    width: 100%;
 }
 .agileits-services-grids {
-
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 
     width: 24%;
+    height: 316px;
 
     transition:0.5s all;
 
@@ -1784,10 +1793,11 @@ a.w3-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 2rem 3rem 2rem;
+    padding: 1.4rem;
+    padding-bottom: 2rem;
 }
 .logo-card img{
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 }
 .team-info{
@@ -3036,6 +3046,10 @@ div#bgcs p {
         width: 50%;
 
     }
+    .agileits-services-grids{
+        width: 31%;
+        margin-top: 2rem;
+    }
 
     .header-w3l ul li {
 
@@ -3106,12 +3120,6 @@ div#bgcs p {
         width: 93%;
 
         font-size: 42px;
-
-    }
-
-    .agileits-services-grids:nth-child(2) {
-
-        margin: 0 17px;
 
     }
 
@@ -3245,6 +3253,10 @@ div#bgcs p {
 
     }
 
+    .agileits-services-grids{
+        width: 47%;
+    }
+
     .agileits-banner-info h3 {
 
         font-size: 57px;
@@ -3320,18 +3332,6 @@ div#bgcs p {
         width: 100%;
 
         font-size: 40px;
-
-    }
-
-    .agileits-services-grids:nth-child(2) {
-
-        margin: 0;
-
-    }
-
-    .agileits-services-grids {
-
-        width: 33%;
 
     }
 
@@ -3872,6 +3872,7 @@ div#bgcs p {
         float: none;
 
         padding: 30px;
+        margin-top: 2rem;
 
     }
 
