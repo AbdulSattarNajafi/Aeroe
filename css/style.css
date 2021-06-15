@@ -1270,7 +1270,7 @@ h3.tittle span {
 
 .title-div {
 
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 
 }
 .title-div h2{
@@ -1640,7 +1640,7 @@ a.w3-buttons {
     background: #0289B7;
 
 }
-.agileits-services{
+.agileits-services-row{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -1653,6 +1653,8 @@ a.w3-buttons {
 
     width: 24%;
     height: 316px;
+    border: 1px solid #0289B7;
+    border-radius: 8px;
 
     transition:0.5s all;
 
@@ -1671,11 +1673,11 @@ a.w3-buttons {
 
 .agileits-services-grids:hover{
 
-    -webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.18);
 
-    -moz-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.18);
 
-    box-shadow:0px 1px 4px 1px rgba(0, 0, 0, 0.18);
+    box-shadow:0px 1px 10px 1px rgba(0, 0, 0, 0.18);
 
     transition:0.5s all;
 
@@ -3048,7 +3050,7 @@ div#bgcs p {
     }
     .agileits-services-grids{
         width: 31%;
-        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .header-w3l ul li {
